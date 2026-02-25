@@ -22,8 +22,8 @@ function record(title, date, category, desc) {
 }
 
 function addEvent(title, date, category, desc) {
-    const card = record(title || 'No title', date || 'No date set', category || 'No category', desc || 'No description');
-    container.appendChild(card);
+    let card = record(title || 'No title', date || 'No date set', category || 'No category', desc || 'No description');
+    container.append(card);
 }
 
 addbtn.addEventListener('click',() => {
@@ -39,7 +39,7 @@ clearbtn.addEventListener('click',() => {
 });
 
 samplebtn.addEventListener('click',() => {
-    const samples = [
+    let samples = [
         { title: 'EmiFest',     date: '2026-03-24', category: 'Conference', desc: 'Annual developer festival' },
         { title: 'JS Workshop', date: '2026-04-10', category: 'Workshop',   desc: 'Hands-on DOM workshop' },
         { title: 'Dev Meetup',  date: '2026-05-01', category: 'Meetup',     desc: 'Local developer meetup' }
@@ -52,6 +52,8 @@ container.addEventListener('click',(e) => {
         e.target.closest('.allrecord').remove();
     }
 });
+
+
 
 let keypressDisplay = document.querySelector("#keypress-display");
 

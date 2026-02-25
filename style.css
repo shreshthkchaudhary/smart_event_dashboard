@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background: linear-gradient(135deg , #744af2, #7bc8f5 );
+    background: linear-gradient(135deg , #861a1a, #635003 );
 }
 header{
     color: #ffffff;
@@ -26,6 +26,7 @@ main {
 }
 
 label {
+    color: #635003;
     font-size: 17px;
     font-weight: bold;
     margin-top: 10px;
@@ -33,11 +34,11 @@ label {
 
 h2 {
     margin-top: 0;
-    color: blue;
+    color: rgb(190, 8, 8);
 }
 
 input, select, textarea{
-    padding-bottom: 10px;
+    padding: 5px;
     margin: 10px;
     border-radius: 5px;
     border: 2px grey solid;
@@ -52,7 +53,9 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
-    background: linear-gradient(135deg , #744af2, #7bc8f5 );
+    background: linear-gradient(135deg , #861a1a, #635003 );
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #sec02 {
@@ -76,8 +79,17 @@ button {
 #container {
 
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto auto;
     margin: 10px auto;
+    gap: 10px;
+}
+
+.allrecord {
+    height: 125px;
+    width: 125px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
 }
 
 footer {
